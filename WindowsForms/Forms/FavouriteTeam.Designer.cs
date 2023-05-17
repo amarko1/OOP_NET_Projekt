@@ -38,9 +38,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(307, 81);
+            this.label1.Location = new System.Drawing.Point(269, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 46);
+            this.label1.Size = new System.Drawing.Size(214, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Favourite Team";
             // 
@@ -48,10 +48,9 @@
             // 
             this.cbFavouriteTeam.BackColor = System.Drawing.Color.White;
             this.cbFavouriteTeam.FormattingEnabled = true;
-            this.cbFavouriteTeam.Location = new System.Drawing.Point(51, 204);
-            this.cbFavouriteTeam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbFavouriteTeam.Location = new System.Drawing.Point(45, 153);
             this.cbFavouriteTeam.Name = "cbFavouriteTeam";
-            this.cbFavouriteTeam.Size = new System.Drawing.Size(773, 28);
+            this.cbFavouriteTeam.Size = new System.Drawing.Size(677, 23);
             this.cbFavouriteTeam.TabIndex = 1;
             // 
             // btnSubmit
@@ -59,10 +58,9 @@
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(339, 300);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSubmit.Location = new System.Drawing.Point(297, 225);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(147, 71);
+            this.btnSubmit.Size = new System.Drawing.Size(129, 53);
             this.btnSubmit.TabIndex = 2;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -70,14 +68,13 @@
             // 
             // FavouriteTeam
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(861, 467);
+            this.ClientSize = new System.Drawing.Size(753, 350);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.cbFavouriteTeam);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FavouriteTeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FavouriteTeam";

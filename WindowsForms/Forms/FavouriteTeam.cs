@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,9 +14,13 @@ namespace WindowsForms.Forms
 {
     public partial class FavouriteTeam : Form
     {
-        public FavouriteTeam()
+        private string gender;
+
+        public FavouriteTeam(string selectedGender)
         {
             InitializeComponent();
+
+            gender = selectedGender;
         }
 
         private void FavouriteTeam_Load(object sender, EventArgs e)
@@ -25,12 +30,25 @@ namespace WindowsForms.Forms
 
         private async void FillData()
         {
-            var responseData = await TeamMenApi.GetData();
-            var data = TeamMenApi.DeserializeData(responseData);
-
-            foreach (var user in data)
+            if (gender == "Men")
             {
-                cbFavouriteTeam.Items.Add(user);
+                var responseData = await TeamMenApi.GetData();
+                var data = TeamMenApi.DeserializeData(responseData);
+
+                foreach (var item in data)
+                {
+                    cbFavouriteTeam.Items.Add(item);
+                }
+            }
+            else if (gender == "Women")
+            {
+                var responseData = await TeamWomenApi.GetData();
+                var data = TeamWomenApi.DeserializeData(responseData);
+
+                foreach (var item in data)
+                {
+                    cbFavouriteTeam.Items.Add(item);
+                }
             }
         }
 
